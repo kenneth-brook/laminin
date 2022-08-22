@@ -1,0 +1,76 @@
+// Theme
+$img_dir: "../images";
+$browser-max: 1920px;
+// $width-min: 320px;
+$container-gutter: 40px;
+$font-base: "Segoe UI", sans-serif;
+$base-font-size: 22px;
+
+$fonts: (
+    "base": $font-base,
+);
+
+// Bootstrap
+//-- Color system
+$colors: (
+    "black": #000,
+    "white": #fff,
+    "base": #16191b,
+    "blue": #0b89c3,
+    "red": #be1e2d,
+    "gray": #606060,
+);
+
+//-- Options
+$enable-caret: false;
+//$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+//$enable-transitions: false;
+$enable-prefers-reduced-motion-media-query: false;
+$enable-hover-media-query: false;
+$enable-grid-classes: false;
+//$enable-responsive-font-sizes: true;
+$enable-validation-icons: false;
+
+//-- Spacing
+$spacer: 1rem;
+
+//-- Body
+$body-color: color("base");
+$text-muted: color("gray");
+
+//-- Links
+$link-color: #395876;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+//-- Grid breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1280px,
+    xxl: 1750px,
+);
+
+//-- Grid containers
+$container-max-widths: (
+    sm: 90%,
+    xl: to-rem(1760px),
+);
+
+// -- Column
+$column-gutter: 60px;
+
+//-- Typography
+$font-family-base: font("base");
+$line-height-base: 1.45; // 32px/22px
+$paragraph-margin-bottom: $spacer;
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+$headings-margin-bottom: 0.2em;
+
+//-- Horizontal rules
+$hr-border-color: color("white");

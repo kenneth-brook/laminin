@@ -1,0 +1,18 @@
+.page-floor-pads {
+    @include media-desktop {
+        .content-header-text {
+            background-size: 95% 100%;
+            background-repeat: no-repeat;
+            left: 12.5%;
+            right: 20%;
+
+            .container {
+                min-height: to-rem(176px);
+            }
+
+            .page-title {
+                right: 5%;
+            }
+        }
+    }
+}

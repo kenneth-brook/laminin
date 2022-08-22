@@ -1,0 +1,198 @@
+.page-concrete-restoration {
+    @include media-desktop {
+        .content-header-text {
+            left: 12.5%;
+            right: 6.25%;
+        }
+    }
+
+    #sealers {
+        .list-card {
+            > li {
+                &:nth-child(2) {
+                    .card-body {
+                        @include card-body-max(543px);
+                    }
+                }
+                &:nth-child(3) {
+                    .card-body {
+                        @include card-body-max(577px);
+                    }
+                    .card-title {
+                        @include card-title-max(484px);
+                    }
+                }
+                &:nth-child(4) {
+                    .card-body {
+                        @include card-body-max(565px);
+                    }
+                    .card-title {
+                        @include card-title-max(481px);
+                    }
+                }
+            }
+        }
+    }
+
+    #joint-treatments {
+        .list-card {
+            > li {
+                &:nth-child(2) {
+                    .card-body {
+                        @include card-body-max(515px);
+                    }
+                }
+            }
+        }
+    }
+
+    #slurry-transformation {
+        .list-card {
+            > li {
+                &:nth-child(1) {
+                    .card-body {
+                        @include card-body-max(521px);
+                    }
+                }
+            }
+        }
+    }
+
+    $font-size: 26px;
+    $phone-font-size: 40px;
+    $block-w: 600px;
+    $max-w: 1282px;
+    $van-w: 315px;
+    $van-h: 197px;
+    .contact-block {
+        max-width: to-em($block-w, $font-size);
+        margin: auto;
+        margin-bottom: $spacer;
+        font-size: to-rem($font-size);
+        font-weight: 600;
+        line-height: decimal-round(30px / $font-size);
+        text-align: center;
+
+        @include media-phone {
+            font-size: 1rem;
+            padding-bottom: $spacer/2;
+        }
+        @include media-breakpoint-up(lg) {
+            max-width: round($max-w * 0.6);
+
+            @include media-not-desktop {
+                font-size: 1rem;
+            }
+        }
+        @include media-desktop {
+            max-width: to-rem($max-w);
+        }
+
+        &-inner {
+            max-width: calc(#{to-em($block-w, $font-size)} - #{$container-gutter});
+            padding: $spacer $container-gutter/2;
+            display: flex;
+            flex-direction: column;
+            color: color("white");
+            background-color: color("blue");
+            position: relative;
+
+            @include media-breakpoint-up(lg) {
+                flex-direction: row;
+                max-width: percentage(1144px / $max-w);
+                padding: $spacer 0;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                width: round($van-w/2);
+                height: round($van-h/2);
+                transform: translate(-96%, percentage(64px / $van-h));
+                position: absolute;
+                bottom: 0;
+                left: calc(100% + #{$container-gutter});
+
+                @include media-phone {
+                    bottom: $spacer/-2;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: round($van-w * 0.6);
+                    height: round($van-h * 0.6);
+                    transform: translate(percentage(-150px / $van-w), percentage((64px * 0.9) / $van-h));
+                    left: 100%;
+                }
+                @include media-desktop {
+                    width: to-rem($van-w);
+                    height: to-rem($van-h);
+                    transform: translate(percentage(-150px / $van-w), percentage(64px / $van-h));
+                }
+            }
+
+            &::before {
+                @include bg-img("vans.png", "vans@2x.png");
+                z-index: 1;
+            }
+            &::after {
+                @include bg-img("vans-shadow.png");
+                mix-blend-mode: multiply;
+            }
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none !important;
+        }
+
+        p {
+            margin: 0;
+
+            @include media-phone {
+                &:not(.phone) {
+                    margin-left: -0.5em;
+                    margin-right: -0.5em;
+                }
+            }
+            @include media-breakpoint-up(lg) {
+                flex: 0 0 percentage(572px/1144px);
+                margin: 0 !important;
+                padding: 0 to-rem(30px) !important;
+            }
+        }
+        .phone {
+            margin-right: auto;
+            margin-top: $spacer;
+            padding: $spacer 0.35em 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: to-em($phone-font-size, $font-size);
+            line-height: 1;
+            white-space: nowrap;
+            border-top: 1px dotted color("white");
+
+            @include media-phone {
+                font-size: to-em($phone-font-size * 0.85, $font-size);
+                padding: $spacer 0.5em 0;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex-basis: percentage(407px/1144px);
+                border-top: 0;
+                border-left: 1px dotted color("white");
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                width: to-em(38px, $phone-font-size);
+                height: to-em(28px, $phone-font-size);
+                margin-right: to-em(22px, $phone-font-size);
+                flex-shrink: 0;
+                background-color: #80d7ff;
+                mask: url(image-url("icon-phone.svg")) 50% 50% / contain no-repeat;
+            }
+        }
+    }
+}

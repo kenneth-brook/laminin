@@ -1,0 +1,42 @@
+/*
+ * Stylesheet : Laminin Industries
+ * Created    : July 2022
+ * -----------------------------------------------------------------------------------
+ */
+
+@import url('../fonts/SegoeUI.css');
+
+// Base - required
+@import "theme/functions";
+@import "bootstrap/functions";
+@import "theme/variables";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "theme/bootstrap-remove";
+
+/*!
+ * Bootstrap v4.6.0 
+ * -----------------------------------------------------------------------------------
+ */
+
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/utilities/screenreaders";
+@import "bootstrap/utilities/spacing";
+@import "bootstrap/utilities/display";
+// @import "bootstrap/utilities/flex";
+@import "bootstrap/type";
+@import "bootstrap/utilities/text";
+// @import "bootstrap/utilities/position";
+ 
+
+/*!
+ * Theme
+ * -----------------------------------------------------------------------------------
+ */
+
+@import "theme/base";
+@import "theme/header";
+@import "theme/content";
+@import "theme/footer";
+@import "theme/pages";

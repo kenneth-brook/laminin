@@ -1,0 +1,61 @@
+.page-request-a-quote {
+    .content-header-image {
+        &::before {
+            opacity: 0.71;
+        }
+    }
+
+    @include media-desktop {
+        .content-header-overlay {
+            padding-right: 7.5%;
+            background: linear-gradient(35deg, transparent 45%, rgba(color("black"), 0.81) 75%);
+            right: 0;
+        }
+        .content-header-text {
+            margin-left: 25%;
+            background: transparent;
+            position: static;
+
+            &::before {
+                display: none;
+            }
+
+            .container {
+                // min-height: to-rem(226px);
+                padding-right: 0;
+                position: relative;
+            }
+
+            .page-title {
+                &::before {
+                    transform: scaleX(1.1) translateX(8.5%);
+                }
+            }
+        }
+    }
+
+    .site-content {
+        @include media-breakpoint-up(lg) {
+            &::after {
+                content: "";
+                display: block;
+                width: to-rem(540px);
+                height: to-rem(380px);
+                @include bg-img("ambassador.png", "ambassador@2x.png");
+                background-size: 100%;
+                background-position: center top;
+                position: absolute;
+                left: to-rem(34px);
+                bottom: to-rem(20px + 3px);
+
+                @include media-breakpoint-down(lg) {
+                    width: round(540px * 0.6);
+                    height: round(380px * 0.6);
+                    bottom: round(15px * 0.6) + round(3px * 0.6);
+                    left: round(15px * 0.6);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
