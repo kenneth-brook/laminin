@@ -1,6 +1,0 @@
-$colors: map-remove(
-	$colors, "indigo", "purple", "pink", "orange", "green", "teal", "cyan", "yellow", "gray-dark"
-);
-$theme-colors: map-remove(
-	$theme-colors, "primary", "secondary", "success", "info", "warning", "danger", "light", "dark"
-);
