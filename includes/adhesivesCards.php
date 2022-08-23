@@ -1,10 +1,5 @@
 <?php
 
-
-
-
-include_once('db_config.php');
-
 $adhesives_sql = "SELECT p.id, p.product_name, p.product_sub_title, p.product_description, p.product_data_sheet, p.safety_data_sheet, d1.filename_disk AS f1, d2.filename_disk AS f2  FROM products AS p JOIN directus_files as d1 ON d1.id = p.product_data_sheet JOIN directus_files as d2 ON d2.id = p.safety_data_sheet WHERE product_category = 0 AND active = 1";
 
 $adhesives_result = mysqli_query($connection,$adhesives_sql);

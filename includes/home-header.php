@@ -1,7 +1,7 @@
-
 <div class="home-branding">
     <p class="logo"><a href="./">Laminin Industries</a></p>
-    <p class="tagline">Proudly serving construction, industrial, cleaning, and manufacturing clients with products and equipment.</p>
+    <p class="tagline">Proudly serving construction, industrial, cleaning, and manufacturing clients with products and
+        equipment.</p>
 </div>
 <nav class="home-navigation">
     <div class="menu-main">
@@ -34,7 +34,7 @@
                 <div class="submenu-wrapper">
                     <ul class="submenu">
                         <li>
-                            <a href="adhesives.php">Adhesives</a>
+                            <a href="index.php?page=adhesives">Adhesives</a>
                         </li>
                         <li>
                             <a href="floor-prep.php">Floor Prep</a>
@@ -51,7 +51,8 @@
                                 <li><a href="concrete-restoration.php#sealers">Sealers</a></li>
                                 <li><a href="concrete-restoration.php#joint-treatments">Joint Treatments</a></li>
                                 <li><a href="concrete-restoration.php#repair-materials">Repair Materials</a></li>
-                                <li><a href="concrete-restoration.php#slurry-transformation">Slurry Transformation</a></li>
+                                <li><a href="concrete-restoration.php#slurry-transformation">Slurry Transformation</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -82,7 +83,7 @@
                         <li>
                             <a href="cleaning-equipment.php">Cleaning Equipment</a>
                         </li>
-                    </ul> 
+                    </ul>
                 </div>
             </li>
             <li>
@@ -100,19 +101,23 @@
 <div class="menu-descriptions">
     <div>
         <h5>PRODUCTS</h5>
-        <p>Whatever your commercial flooring need, Laminin Industries has the products to help with floor prep, adhesion, concrete restoration, and more.</p>
+        <p>Whatever your commercial flooring need, Laminin Industries has the products to help with floor prep,
+            adhesion, concrete restoration, and more.</p>
     </div>
     <div>
         <h5>EQUIPMENT</h5>
-        <p>Gia volorereium ulparum, te laciae corem faccusa ndaepre re dolupiet que verumquos molorec ullorum eatiur rat. Um vel ideribus, enia alitas et exerio estiorepro mi, ut ad quam.</p>
+        <p>Gia volorereium ulparum, te laciae corem faccusa ndaepre re dolupiet que verumquos molorec ullorum eatiur
+            rat. Um vel ideribus, enia alitas et exerio estiorepro mi, ut ad quam.</p>
     </div>
     <div>
         <h5>RESOURCES</h5>
-        <p>Gia volorereium ulparum, te laciae corem faccusa ndaepre re dolupiet que verumquos molorec ullorum eatiur rat. Um vel ideribus, enia alitas et exerio estiorepro mi, ut ad quam.</p>
+        <p>Gia volorereium ulparum, te laciae corem faccusa ndaepre re dolupiet que verumquos molorec ullorum eatiur
+            rat. Um vel ideribus, enia alitas et exerio estiorepro mi, ut ad quam.</p>
     </div>
     <div>
         <h5>CONTACT US</h5>
-        <p>Gia volorereium ulparum, te laciae corem faccusa ndaepre re dolupiet que verumquos molorec ullorum eatiur rat. Um vel ideribus, enia alitas et exerio estiorepro mi, ut ad quam.</p>
+        <p>Gia volorereium ulparum, te laciae corem faccusa ndaepre re dolupiet que verumquos molorec ullorum eatiur
+            rat. Um vel ideribus, enia alitas et exerio estiorepro mi, ut ad quam.</p>
     </div>
 </div>
 <div class="large-image">
